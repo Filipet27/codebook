@@ -21,6 +21,7 @@ while(esq<=dir){
         min++;
         dir--;
         cont=0;
+        //
         
     }
 
