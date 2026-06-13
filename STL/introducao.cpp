@@ -14,13 +14,16 @@ int main() {
     // O(1) acesso, O(1) no final, O(N) no meio
     // ==========================================
     vector<int> v;
+
     v.push_back(10);       // Adiciona no final [10]
     v.push_back(20);       // Adiciona no final [10, 20]
     v.pop_back();          // Remove o último [10]
     int tam = v.size();    // Tamanho atual
     bool v_vazio = v.empty(); // Verifica se está vazio
     v.clear();             // Apaga tudo
-    
+    v.erase(v.begin()+1);//remover a posicao 1
+    v.resize(5);//reduz ou aumenta o tam do vetor
+    v.resize(5,-1);//reduz ou aumenta e os vazios começam com -1, ou seja, valores= (3 , 5 , 2, -1 , -1)
     vector<int> v2(5, -1); // Cria vector de tamanho 5 preenchido com -1
 
     // ==========================================
