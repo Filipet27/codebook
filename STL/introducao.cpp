@@ -30,6 +30,8 @@ int main() {
     // PAIR (Par de dois valores de qualquer tipo)
     // Útil para coordenadas (x, y) ou grafos com peso
     // ==========================================
+    vector<pair<int,int>>vs;
+    vs.push_back({1,2});
     pair<int, string> p;
     p = make_pair(1, "Filipe"); // Cria o par
     p = {2, "Git"};             // Sintaxe moderna (C++11)
