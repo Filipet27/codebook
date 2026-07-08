@@ -1,5 +1,12 @@
     // lower_bound faz a busca binária na lista ordenada de casas
 
+  //retorna o indice do primeiro elemento que é menor ou igual a x
+
+  sort(casas.rbegin(),casas.rend);//ordena decrescente
+  auto it=lower_bound(casas.begin(),casas.end(),valor,greater<ll>())- v.begin();
+  
+
+
 
 
     //retorna o indice do primeiro elemento que é maior ou igual a x
@@ -14,3 +21,5 @@
         
     // Subtraindo o iterador inicial, descobrimos o índice desse valor instantaneamente
     int indicedovetor = it - casas.begin();
+
+    //se nao encontrar retorna casas.end()
